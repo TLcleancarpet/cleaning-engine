@@ -3,10 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TL Clean Carpet & Mat Co.</title>
+    <title>TL Clean Carpet & Mat Co. | Servicios Profesionales de Limpieza</title>
+    <style>
+        /* Estilos Generales - Paleta Profesional de Limpieza (Azul, Blanco y Gris) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado / Hero Section */
+        header {
+            background: linear-gradient(135deg, #0f2b46 0%, #1a4a75 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #00a8cc;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #d1f4ff;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Sección de Introducción Comercial */
+        .intro {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #1a4a75;
+            margin-bottom: 15px;
+        }
+
+        /* Cuadrícula de Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #1a4a75;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card.extra {
+            border-top: 4px solid #00a8cc;
+            background-color: #fdfdfd;
+        }
+
+        .card h3 {
+            color: #1a4a75;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card.extra h3 {
+            color: #00a8cc;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card ul li::before {
+            content: "✓";
+            color: #00a8cc;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Sección de Contacto / Llamado a la Acción */
+        .cta-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: #1a4a75;
+            margin-bottom: 10px;
+        }
+
+        .cta-section p {
+            margin-bottom: 25px;
+            color: #666;
+        }
+
+        /* Botones de Contacto */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebd58;
+        }
+
+        .btn-call {
+            background-color: #1a4a75;
+            color: white;
+        }
+
+        .btn-call:hover {
+            background-color: #0f2b46;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+
+        /* Adaptación para pantallas pequeñas (Celulares) */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .btn { width: 100%; text-align: center; }
+            .btn-container { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
-    <h1>TL Clean Carpet & Mat Co.</h1>
-    <p>¡Bienvenidos a nuestra página web oficial! Muy pronto verás todos nuestros servicios de limpieza residencial y comercial aquí.</p>
+
+    <header>
+        <h1>TL Clean Carpet & Mat Co.</h1>
+        <p>Soluciones Profesionales e Integrales de Limpieza</p>
+    </header>
+
+    <div class="container">
+
+        <section class="intro">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Nos especializamos en el mantenimiento y sanitización de espacios habitacionales y comerciales. Nos adaptamos por completo a las necesidades y presupuestos específicos de cada uno de nuestros clientes, garantizando un entorno impecable y saludable.</p>
+        </section>
+
+        <section class="services-grid">
+            
+            <div class="card">
+                <h3>Limpieza Residencial y Comercial</h3>
+                <ul>
+                    <li>Mantenimiento profundo de habitaciones y áreas comunes.</li>
+                    <li>Sanitización completa de baños y cocinas.</li>
+                    <li>Lavado, pulido y cuidado experto de todo tipo de pisos.</li>
+                    <li>Ideal para casas, oficinas y restaurantes.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Cuidado Textil Especializado</h3>
+                <ul>
+                    <li>Lavado profundo de alfombras residenciales y corporativas.</li>
+                    <li>Limpieza y remoción de manchas en alfombrados fijos.</li>
+                    <li>Mantenimiento delicado y desinfección de tapetes.</li>
+                    <li>Eliminación de malos olores y ácaros.</li>
+                </ul>
+            </div>
+
+            <div class="card extra">
+                <h3>Servicios Complementarios (Extras)</h3>
+                <ul>
+                    <li>Limpieza detallada de ventanas y ventanales.</li>
+                    <li>Lavado de cristales interiores y exteriores.</li>
+                    <li>Proyectos especiales y requerimientos personalizados de limpieza bajo cotización previa.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Listo para agendar o necesitas una cotización?</h2>
+            <p>¡Nos adaptamos a ti! Haz clic en cualquiera de las opciones para comunicarte directamente con nosotros.</p>
+            
+            <div class="btn-container">
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20cotizar%20un%20servicio%20de%20limpieza" target="_blank" class="btn btn-whatsapp">
+                    💬 Enviar WhatsApp
+                </a>
+                
+                <a href="tel:+12672454870" class="btn btn-call">
+                    📞 Llamar Directo
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TL Clean Carpet & Mat Co. - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
